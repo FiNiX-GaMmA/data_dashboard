@@ -3,7 +3,7 @@ version: '3.8'
 services:
   streamlit-app: # You can name your service whatever you like; "streamlit-app" is just a placeholder.
     build:
-      context: ./app  # Assuming your Dockerfile is inside an 'app' directory.
+      context: .  # Assuming your Dockerfile is inside an 'app' directory.
     ports:
       - "8007:8007"  # Replace "8000:8000" with "host_port:container_port" if your application needs to expose any ports.
     volumes:
