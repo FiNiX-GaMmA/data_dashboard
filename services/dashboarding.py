@@ -32,7 +32,7 @@ def plot_bottom_left(df, columnA, columnB, type_of_graph):
                         st.stop()
                     fig = graph_function(df, names=columnA)
                 else:
-                    fig = graph_function(df, x=columnA, y=columnB, color="District")
+                    fig = graph_function(df, x=columnA, y=columnB)
                 st.plotly_chart(fig)
             else:
                 st.error("Invalid graph type selected!")
