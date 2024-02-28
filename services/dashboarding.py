@@ -1,5 +1,5 @@
 import plotly.express as px
-import app as st
+import streamlit as st
 
 
 def plot_bottom_left(df):
