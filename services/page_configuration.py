@@ -9,12 +9,17 @@ def load_data(path: str):
     return data
 
 
-def file_configuration():
-    st.title("Data Dashboard")
-
+def load_file():
     with st.sidebar:
         st.title("Configuration")
         uploaded_file = st.sidebar.file_uploader("Upload the file")
+        return uploaded_file
+
+
+def file_configuration():
+    st.title("Data Dashboard")
+
+    uploaded_file = load_file()
 
     if uploaded_file is not None:
         df = load_data(uploaded_file)
@@ -24,4 +29,4 @@ def file_configuration():
         st.info("No file uploaded. Please upload the file")
         st.stop()
 
-    return st.dataframe(df)
+    return df
