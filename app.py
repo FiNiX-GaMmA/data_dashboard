@@ -3,8 +3,8 @@ from services.page_configuration import file_configuration
 from services.dashboarding import plot_bottom_left
 
 st.set_page_config(
-    page_title="Data Visualization",
-    page_icon=":bar_chart:",
+    page_title="Dynamic Grapher",
+    page_icon=":moyai:",
     layout="wide"
 )
 df = file_configuration()

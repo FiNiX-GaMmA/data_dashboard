@@ -1,4 +1,4 @@
-# Dynamic data dashboard
+# Dynamic Graphing System
 
 This is BI board built with the help of streamlit application.
 
