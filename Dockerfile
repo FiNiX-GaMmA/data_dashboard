@@ -11,7 +11,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade \
 COPY . /var/www
 
 WORKDIR /var/www
-COPY --from=build-step /app/build /var/www/build
+
 RUN pip3 install -r ./requirements.txt
 
 EXPOSE 8007
