@@ -9,5 +9,5 @@ st.set_page_config(
 )
 file_configuration()
 
-plot_bottom_left(load_data())
+plot_bottom_left(file_configuration())
 

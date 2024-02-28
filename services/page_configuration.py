@@ -23,3 +23,5 @@ def file_configuration():
     else:
         st.info("No file uploaded. Please upload the file")
         st.stop()
+
+    return st.dataframe(df)
