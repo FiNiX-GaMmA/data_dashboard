@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Data Visualization",
+    page_icon=":bar_chart:",
+    layout="wide"
+)
 
 @st.cache_data
 def load_data(path: str):
@@ -11,7 +15,6 @@ def load_data(path: str):
 
 if __name__ == "__main__":
     st.title("Data Dashboard")
-
 
     with st.sidebar:
         st.title("Configuration")
